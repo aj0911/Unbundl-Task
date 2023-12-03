@@ -1,0 +1,475 @@
+.wrapperTask2{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #011C42;
+}
+
+.wrapperTask2 > header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    position: fixed;
+    width: 100%;
+    background-color: #011C42;
+    z-index: 5;
+    animation: animateAppears .3s ease-in;
+
+}
+
+.wrapperTask2 > header h1{
+    color: #00E4F5;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.wrapperTask2 > header a{
+    color: #00E4F5;
+    font-size: 1.5rem;
+}
+.wrapperTask2 > header a span{
+    font-size: 1rem;
+}
+
+.wrapperTask2  .container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 5%;
+}
+.wrapperTask2  .container .left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100vh;
+}
+.wrapperTask2  .container .left img{
+    width: 50%;
+    height: 250px;
+    animation: animateAppears .5s ease-in;
+    transition: .5s;
+}
+.wrapperTask2  .container .left .slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 10px;
+    animation: animateAppears 1s ease-in;
+}
+.wrapperTask2  .container .left .slider .item{
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    transition: .5s;
+}
+.wrapperTask2  .container .left .slider .item:nth-child(2){
+    box-shadow: 20px 20px 50px rgba(0,0,0,.8);
+    transform: scale(1.2);
+}
+.wrapperTask2  .container .left .pagination{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    animation: animateAppears 1s ease-in;
+    .fa{
+        box-shadow: 20px 20px 50px rgba(0,0,0,.8);
+        font-size: 1.5rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        cursor: pointer;
+        transition: .5s;
+    }
+    .fa:hover{
+        background-color: #00E4F5;
+        color: #211858;
+    }
+}
+.wrapperTask2  .container .left .slider .item:nth-child(4){
+    display: none;
+}
+.wrapperTask2  .container .right{
+    width: 50%;
+    height: 100vh;
+    position: relative;
+}
+
+.wrapperTask2  .container .right .content:nth-child(1){
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 70px;
+    width: calc(100% - 140px);
+    background-color: #211858;
+    overflow: scroll;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    animation: animateAppears 1s ease-in;
+
+}
+.wrapperTask2  .container .right .content{
+    display: none;
+}
+
+.wrapperTask2  .container .right .content:nth-child(1) > h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #00E4F5;
+    text-transform: uppercase;
+    padding: 20px 20px 0 20px;
+}
+.wrapperTask2  .container .right .content:nth-child(1) > p{
+    font-size: .9rem;
+    font-weight: 400;
+    color: #D1DDF7;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+.wrapperTask2  .container .right .content:nth-child(1) .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    .stars{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        .fa{
+            font-size: .8rem;
+        }
+    }
+}
+.wrapperTask2  .container .right .content:nth-child(1) h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #D1DDF7;
+    text-transform: capitalize;
+}
+
+.wrapperTask2  .container .right .content:nth-child(1) .description{
+    background-color: #011C42;
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+.wrapperTask2  .container .right .content:nth-child(1) .description p{
+    font-size: .7rem;
+    font-weight: 400;
+    color: #D1DDF7;
+    text-transform: capitalize;
+}
+
+.wrapperTask2  .container .right .content:nth-child(1) .quantity{
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.wrapperTask2  .container .right .content:nth-child(1) .quantity > h3{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.wrapperTask2  .container .right .content:nth-child(1) button{
+    margin-left: 20px;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    border: none;
+    color: #00E4F5;
+    background-color: #011C42;
+    box-shadow: 5px 5px 50px rgba(0,0,0,0.4);
+    transition: .5s;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.wrapperTask2  .container .right .content:nth-child(1) button:hover{
+    background-color: #00E4F5;
+    color: #011C42;
+    transform: scale(1.05);
+}
+.wrapperTask2 .cartModal{
+    display: none;
+}
+.wrapperTask2.active .container{
+    filter: blur(30px);
+}
+.wrapperTask2.active .cartModal{
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    transition: .5s;
+    top: 100px;
+    left: 7%;
+    width: calc(100% - 14%);
+    height: calc(100% - 200px);
+    overflow: scroll;
+    z-index: 1;
+    background-color: white;
+    animation: animateAppears .5s ease-in-out;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.8);
+    padding: 20px;
+    border-radius: 10px;
+    gap: 1rem;
+}
+
+.wrapperTask2.active .cartModal > h3{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.wrapperTask2.active .cartModal .cartBox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 2rem;
+}
+.wrapperTask2.active .cartModal .cartBox .LeftQuan{
+    width: calc(70% - 2rem);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-direction: column;
+}
+.wrapperTask2.active .cartModal .cartBox .LeftQuan .cart-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    border-top: 1px solid #dfdada;
+    border-bottom: 1px solid #dfdada;
+    padding: 10px;
+}
+.wrapperTask2.active .cartModal .cartBox .LeftQuan .cart-item img{
+    width: 50px;
+}
+.wrapperTask2.active .cartModal .cartBox .LeftQuan .cart-item .cart-content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.wrapperTask2.active .cartModal .cartBox .LeftQuan .cart-item .cart-content h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.wrapperTask2.active .cartModal .cartBox .LeftQuan .cart-item .cart-content p{
+    font-size: .9rem;
+    font-weight: 400;
+}
+.wrapperTask2.active .cartModal .cartBox .LeftQuan .cart-item .quan{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+}
+.wrapperTask2.active .cartModal .cartBox .LeftQuan .cart-item .quan i{
+    border: 1px solid #dfdada;
+    padding: 5px;
+    cursor: pointer;
+}
+.wrapperTask2.active .cartModal .cartBox .LeftQuan .cart-item .quan h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.wrapperTask2.active .cartModal .cartBox .LeftQuan .cart-item  h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.wrapperTask2.active .cartModal .cartBox .rightBill{
+    width: 30%;
+    background-color: #D8DFE6;
+    padding: 10px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: .5rem;
+    .bill{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.4);
+}
+.wrapperTask2.active .cartModal .cartBox .rightBill h3{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.wrapperTask2.active .cartModal .cartBox .rightBill p{
+    font-size: .9rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.wrapperTask2.active .cartModal .cartBox .rightBill h5{
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.wrapperTask2.active .cartModal .cartBox .rightBill button{
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: .5s;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.wrapperTask2.active .cartModal .cartBox .rightBill button:hover{
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width:1099px) {
+    .wrapperTask2 .container{
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 150px;
+        padding-bottom: 50px;
+        .left{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            height: auto;
+        }
+        .right{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+        }
+
+    }
+    .wrapperTask2 .container .right .content:nth-child(1){
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .wrapperTask2.active .cartModal .cartBox {
+        flex-direction: column;
+        gap: 2rem;
+        .LeftQuan{
+            width: 100%;
+        }
+        .rightBill{
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width:599px) {
+    .wrapperTask2 > header h1 {
+        font-size: 1.2rem;
+    }
+    .wrapperTask2 > header a {
+        color: #00E4F5;
+        font-size: .9rem;
+    }
+    .wrapperTask2  .container .left .slider{
+        display: none;
+    }
+    .wrapperTask2 .container .right .content:nth-child(1) h3 {
+        font-size: 1rem;
+    }
+    .wrapperTask2 .container .right .content:nth-child(1) > p {
+        font-size: .7rem;
+    }
+    .wrapperTask2 .container .right .content:nth-child(1) button {
+        margin-left: 20px;
+        padding: 3px 6px;
+        font-size: .9rem;
+    }
+    .wrapperTask2.active .cartModal > h3 {
+        font-size: 1rem;
+    }
+    .wrapperTask2.active .cartModal .cartBox .LeftQuan .cart-item {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: .5rem;
+    }
+    .wrapperTask2.active .cartModal .cartBox .LeftQuan .cart-item .cart-content h3 {
+        font-size: .9rem;
+    }
+    .wrapperTask2.active .cartModal .cartBox .LeftQuan .cart-item .cart-content p {
+        font-size: .7rem;
+    }
+    .wrapperTask2.active .cartModal .cartBox .LeftQuan .cart-item .quan i {
+        font-size: .7rem;
+    }
+    .wrapperTask2.active .cartModal .cartBox .LeftQuan .cart-item h3 {
+        font-size: .9rem;
+    }
+    .wrapperTask2.active .cartModal .cartBox .LeftQuan .cart-item .quan h3 {
+        font-size: .9rem;
+    }
+    .wrapperTask2.active .cartModal .cartBox .LeftQuan .cart-item img {
+        width: 100%;
+    }
+    .wrapperTask2.active .cartModal .cartBox .rightBill h3 {
+        font-size: .9rem;
+    }
+    .wrapperTask2.active .cartModal .cartBox .rightBill p {
+        font-size: .7rem;
+    }
+    .wrapperTask2.active .cartModal .cartBox .rightBill h5 {
+        font-size: .8rem;
+    }
+    .wrapperTask2.active .cartModal .cartBox .rightBill
+    .bill {
+        gap: .5rem;
+    }
+    .wrapperTask2.active .cartModal .cartBox .rightBill button {
+        font-size: .9rem;
+    }
+}
+
+@keyframes animateAppears {
+    0%{
+        transform: translateY(-10px);
+        opacity: 0;
+        filter: blur(33px);
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
